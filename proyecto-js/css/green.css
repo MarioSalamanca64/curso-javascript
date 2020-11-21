@@ -1,0 +1,32 @@
+body{
+    /*../ es salir de css y entrar a carpeta img*/
+    background: url('../img/city.jpg');
+    /*para que no siga la imagen el tama;o*/
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #00474d;
+}
+
+#menu ul li:hover{
+    background:#00474d ;
+}
+
+.button-more{
+    background: #00474d;
+}
+
+#fondo-color{
+    background: #00474d; 
+    color: white;
+}
+
+#fondo-color2{
+    background: #00474d; 
+    color: white;
+}
+#fondo-color3{
+    background: #00474d; 
+    color: white;
+}

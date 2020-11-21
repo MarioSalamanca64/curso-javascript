@@ -1,0 +1,33 @@
+body{
+    /*../ es salir de css y entrar a carpeta img*/
+    background: url('../img/cielo.jpg');
+    /*para que no siga la imagen el tama;o*/
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #21aef2;
+}
+
+#menu ul li:hover{
+    background:#2cc2fe;
+}
+
+.button-more{
+    background: #2cc2fe;
+}
+
+#fondo-color{
+    background: #2cc2fe; 
+    color: white;
+}
+
+#fondo-color2{
+    background: #2cc2fe; 
+    color: white;
+}
+#fondo-color3{
+    background: #2cc2fe; 
+    color: white;
+}
+

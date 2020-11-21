@@ -1,0 +1,32 @@
+body{
+    /*../ es salir de css y entrar a carpeta img*/
+    background: url('../img/black.jpg');
+    /*para que no siga la imagen el tama;o*/
+    background-attachment: fixed;
+}
+
+#logo{
+    background: black;
+}
+
+#menu ul li:hover{
+    background:black ;
+}
+
+.button-more{
+    background: black;
+}
+
+#fondo-color{
+    background: gray; 
+    color: black;
+}
+
+#fondo-color2{
+    background: gray; 
+    color: black;
+}
+#fondo-color3{
+    background: gray; 
+    color: black;
+}
