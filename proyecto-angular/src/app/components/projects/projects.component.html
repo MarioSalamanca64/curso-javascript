@@ -1,0 +1,18 @@
+<div class="container">
+<h2>Projectos</h2>
+<ul>
+    <!--muestra todos los objetos en la base de datos
+    {{project}} acceder a cualquier nombre del projecto-->
+    <li *ngFor="let project of projects" class="project">
+            <!--hacer un enrutado ala pagina-->
+        <a [routerLink]="['/proyecto',project._id]">
+            <!--hacer una mascara-->
+            <div class="image">
+                <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image">
+            </div>
+        <h3>{{project.name}}</h3> 
+        <p>{{project.langs}}</p>
+        </a>
+    </li>
+</ul>
+</div>

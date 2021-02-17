@@ -1,0 +1,36 @@
+<div [ngStyle]="{
+  'background': config.fondo,
+  'padding' : '20px',
+  'border':'5px solid black',
+  'border-color': config.color
+}">
+  <h1>
+    Bienvenido al {{title}}
+  </h1>
+  <p>{{descripcion}}</p>
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="'active'" >home</a>
+    &nbsp;
+    <a [routerLink]="['/zapatillas']"  [routerLinkActive]="'active'">zapatos</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']"  [routerLinkActive]="'active'">cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']"  [routerLinkActive]="'active'">Videojuegos</a>
+    &nbsp;
+    <a [routerLink]="['/externo']"  [routerLinkActive]="'active'">Externo</a>
+    &nbsp;
+    <a [routerLink]="['/contacto']"  [routerLinkActive]="'active'">Contacto</a>
+  </nav>
+  <hr>
+
+ 
+ <!--<zapatillas></zapatillas>-->
+ <!--carga los componentes de router  app.routing.ts-->
+ <router-outlet></router-outlet>
+ <cursos></cursos>
+ <!--puedes crear componentes en cdm hay que acceder 
+  ala carpeta y del cmd de windos
+  con el codigo 
+  ng generate component cursos
+-->
+</div>

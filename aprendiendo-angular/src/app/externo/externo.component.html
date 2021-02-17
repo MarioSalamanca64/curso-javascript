@@ -1,0 +1,50 @@
+<!--pipe-->
+    {{fecha | date:'dd/MM/yy'}} <br>
+    {{fecha | date:'fullDate' | uppercase}}<br>
+    {{'HOLA MUNDO USANDO PIPES'| lowercase}}
+<hr>
+
+
+<!--blur salir de ese campo --dar enter keyup.enter-->
+<input type="text" [(ngModel)]="userId" (Keyup.enter)="cargaUsuario()"/>
+<div *ngIf="user">
+    <img src="{{user.avatar}}" width="200">
+    <h2>Hola {{user.first_name + ' ' + user.last_name}}</h2>
+
+</div>
+<hr>
+<h2>Crear usuario</h2>
+<!--nuevo usuario
+    var newUser metodo ngForm-->
+    <form  #newUser="ngForm"(ngSubmit)="onSubmit(newUser)">
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" #name="ngModel"[(ngModel)]="new_user.name"
+            required/>
+            <span *ngIf="name.touched && !name.valid">
+                El nombre no es valido
+            </span>
+        </p>
+         <p>
+            <label for="job">Trabajo</label>
+            <input type="text" name="job" #job="ngModel"[(ngModel)]="new_user.job" 
+            required/>
+            <span *ngIf="job.touched && !job.valid">
+                El trabajo no es valido
+            </span>
+        </p>
+        <input type="submit" value="Guardar usuario"[disabled]="!newUser.form.valid">
+     
+    </form>
+    <div *ngIf="usuario_guardado">
+        <h2>El usuario se guardado</h2>
+        <h2>{{usuario_guardado.name}}</h2>
+        <h2>{{usuario_guardado.job}}</h2>
+    </div>
+   
+    
+
+    <!--
+  
+
+    -->

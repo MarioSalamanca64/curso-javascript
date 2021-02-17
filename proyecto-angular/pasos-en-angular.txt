@@ -1,0 +1,21 @@
+crear proyecto
+ng new proyecto-angular
+despues crear componentes o paginas en si components es la carpeta 
+ng g component components/about
+ng g component components/projects
+ng g component components/create
+ng g component components/contact
+despues crear la rustas con un archivo llamado app.routing.ts
+poner los estilos en carpeta //assets
+crear nueva carpeta /css archivo styles.css
+para que funcione el css se debe editar el --angular.json
+en la seccion styles se pone la ruta del archivo 
+//"src/assets/css/styles.css"
+//conectar con el api 
+se crean dos carpestas en app-- /models y /services
+models representa un objeto de la base de datos copiar los modelos de la bace de datos esta en /models
+/services se crea un archivo --global y se pone la url de el api 
+--project.service.ts se importan todo para que funcione el http y los formularios 
+error en Observable /rxjs se instala npm install --save rtxj-compat
+IMPORTANTE
+cargar en -app.modules.ts hay que cargar nuestro archivos http y formularios

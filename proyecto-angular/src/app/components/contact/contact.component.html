@@ -1,0 +1,22 @@
+<div class="container">
+<h1>Contacto</h1>
+<div id="texto">
+    <p>
+        Esta es la pagina de contacto, puedes enviarnos cualquier duda
+    </p>
+</div>
+
+
+Tamaño del slider
+<input type="text" [(ngModel)]="widthSlider"/>
+<button (click)="cargarSlider()">Cargar slider</button>
+<button (click)="resetarSlider()">Resetear slider</button>
+
+<div *ngIf="anchuraToSlider">
+//atributo hijo width es una variable
+<slider [anchura]="anchuraToSlider"></slider>
+
+
+
+</div>
+
